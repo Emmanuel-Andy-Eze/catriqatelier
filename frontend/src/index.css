@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,300;1,400;1,600;1,700;1,900&display=swap');
+
+body {
+    font-family: 'Source Sans Pro',
+    sans-serif !important;
+    scroll-behavior: smooth;
+    background-color: #F5F5F7 !important;
+    overflow-x: hidden;
+}
+
+main {
+    min-height: 85vh;
+}
+
+.navbar {
+    background-color: #313132;
+}
+
+.nav-links {
+    font-family: 'Source Sans Pro',
+    sans-serif !important;
+    font-size: .85rem;
+    font-style: italic;
+}
+
+.nav-action {
+    padding-left: 8rem !important;
+}
+
+.title {
+    margin-left: 7rem;
+    font-size: 1.8rem;
+    font-weight: 800;
+}
+
+.title span {
+    color: black;
+    font-weight: 600;
+}
+
+.row_posters {
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding-left: 7rem;
+}
+
+.row_posters::-webkit-scrollbar {
+    display: none;
+}
+
+.card-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.card-icon {
+    height: auto !important;
+    border: none !important;
+}
+
+.card-icon img {
+    width: 100%;
+}
+
+.card-icon:hover {
+    transform: scale(1.02);
+    opacity: 1;
+    box-shadow: none !important;
+}
+
+.card {
+    border-radius: 25px !important;
+    margin-right: .2rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    transition: transform 450ms;
+    margin-left: 1rem;
+    /* height: 30rem !important; */
+}
+
+.store-card {
+    border-radius: 25px !important;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    transition: transform 450ms;
+    /* height: 30rem !important; */
+}
+
+.card:hover {
+    transform: scale(1.02);
+    opacity: 1;
+    box-shadow: 1px 2px 1px #888888;
+}
+
+.landing {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.landing-text {
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+}
+
+.landing-text span {
+    color: #6E6E73;
+    font-weight: 700;
+}
+
+.landing-text h1 {
+    font-weight: 700;
+}
+
+.shopping-help h4{
+    line-height: 2px;
+    font-size: 1rem;
+}
+
+.shopping-help a {
+    line-height: 2px;
+    font-size: .8rem;
+    text-decoration: none;
+}
+
+.partner {
+    line-height: 2px;
+}
+
+.partner h4{
+    
+    font-size: 1rem;
+}
+
+.partner a {
+    font-size: .8rem;
+    text-decoration: none;
+}
+
+.product-card {
+    text-decoration: none;
+    border-radius: 0px !important;
+    margin-right: .2rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+.product-card:hover {
+    transform: scale(1) !important;
+    opacity: 1 !important;
+    box-shadow: 0 0 0 0 !important;
+}
+
+.card-body {
+    line-height: 0 !important;
+}
+
+.product-title {
+    color: black;
+    text-decoration: none;
+    font-size: .8rem;
+}
+
+.product-text {
+    color: black;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 2rem;
+}
+
+.product-price {
+    color: black;
+}
+
+.product-image {
+    padding-bottom: 2rem;
+    width: 20rem;
+    margin: 0 auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.store-product-image {
+    width: 15rem;
+    margin: 0 auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.service-text {
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 2rem;
+}
+
+.fa-star-half-alt, .fa-star {
+    color: gold !important;
+}
+
+
+@media screen and (max-width: 600px) {
+    .nav-action {
+        padding-left: 0 !important;
+    }
+
+    .nav-links {
+        margin-left: 0 !important;
+    }
+
+    .landing {
+        display: block;
+        /* padding-bottom: 1rem; */
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .landing-text {
+        padding-top: 2rem;
+    }
+
+    .landing-actions {
+        display: none;
+    }
+
+    .title {
+        margin-left: .5rem;
+        font-size: 1.5rem;
+        padding-left: .5rem;
+    }
+
+    .row_posters {
+        display: flex;
+        overflow-y: hidden;
+        overflow-x: scroll;
+        margin-left: 0;
+        padding-left: 0;
+    }
+}
